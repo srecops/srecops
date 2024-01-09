@@ -24,7 +24,7 @@ spec:
   resources:
     requests:
       storage: 30Gi
-  persistentVolumeReclaimPolicy: Retain
+  
 ---
 apiVersion: apps/v1
 kind: Deployment
