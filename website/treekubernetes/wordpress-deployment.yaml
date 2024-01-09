@@ -53,4 +53,4 @@ spec:
       volumes:
       - name: wordpress-persistent-storage
         hostPath:
-          path: /Users/d073341/work/srecops/srecops/website/prodweb/tree
+          path: /Users/d073341/work/srecops/srecops/website/prodweb/drfruit
