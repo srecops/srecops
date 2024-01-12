@@ -1,0 +1,11 @@
+controller:
+  replicaCount: 2  # Adjust as needed
+  extraArgs:
+    enable-ssl-passthrough: "true"
+    publish-service: "my-nginx-ingress-controller"
+  service:
+    enabled: true
+    type: LoadBalancer
+    annotations:
+      service.beta.kubernetes.io/do-loadbalancer-name: "wordpress"  # Replace with your LoadBalancer name
+
