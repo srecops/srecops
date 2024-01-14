@@ -1,7 +1,20 @@
+## Installation commands
+### Document : https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nginx-ingress-on-digitalocean-kubernetes-using-helm
+
+helm install nginx-ingress ingress-nginx/ingress-nginx --set controller.publishService.enabled=true --debug
+
+
+
+
+
+## Installation Notes
+
 NOTES:
 The ingress-nginx controller has been installed.
 It may take a few minutes for the load balancer IP to be available.
-You can watch the status by running 'kubectl get service --namespace default nginx-ingress-ingress-nginx-controller --output wide --watch'
+You can watch the status by running 
+
+'kubectl get service --namespace default nginx-ingress-ingress-nginx-controller --output wide --watch'
 
 An example Ingress that makes use of the controller:
   apiVersion: networking.k8s.io/v1
