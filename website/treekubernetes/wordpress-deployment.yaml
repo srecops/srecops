@@ -52,7 +52,14 @@ spec:
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
+        volumeMounts:
+        - name: apache-conf
+          mountPath: /etc/apache2/sites-available
       volumes:
       - name: wordpress-persistent-storage
         hostPath:
           path: /Users/d073341/work/srecops/srecops/website/prodweb/srecops
+      - name: apache-conf
+        hostPath:
+          path: /Users/D073341/work/srecops/srecops/website/treekubernetes/apacheconffile
+
