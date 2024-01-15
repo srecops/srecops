@@ -6,10 +6,10 @@ metadata:
     ingressClassName: nginx
 spec:
   ingressClassName: nginx
-  tls:
-  - hosts:
-    - srecops.com
-    secretName: srecops-tls
+  #tls:
+  #- hosts:
+  #  - srecops.com
+  #  secretName: srecops-tls
   rules:
   - host: "srecops.com"
     http:
