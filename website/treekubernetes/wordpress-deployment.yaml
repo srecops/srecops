@@ -52,7 +52,6 @@ spec:
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
-        volumeMounts:
         - name: apache-conf
           mountPath: /etc/apache2/sites-available
       volumes:
