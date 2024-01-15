@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: wordpress
   annotations:
-    service.beta.kubernetes.io/do-loadbalancer-certificate: "srecops-ssl-secret"
+    service.beta.kubernetes.io/do-loadbalancer-certificate: "srecops-tls"
   labels:
     app: wordpress
 spec:
