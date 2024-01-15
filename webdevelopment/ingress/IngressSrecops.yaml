@@ -8,7 +8,7 @@ spec:
   tls:
   - hosts:
     - srecops.com
-    secretName: srecops-ssl-secret
+    secretName: srecops-tls
   rules:
   - host: "srecops.com"
     http:
